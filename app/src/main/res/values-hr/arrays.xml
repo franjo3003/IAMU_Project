@@ -1,0 +1,52 @@
+<resources>
+
+    <string-array name="fuel_types">
+        <item>Benzin</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+        <item>Električni</item>
+    </string-array>
+
+    <string-array name="fuel_filter_types">
+        <item>Sve</item>
+        <item>Benzin</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+        <item>Električni</item>
+    </string-array>
+
+    <string-array name="theme_modes">
+        <item>Sistemska</item>
+        <item>Svijetla</item>
+        <item>Tamna</item>
+    </string-array>
+
+    <string-array name="fuel_filter_labels">
+        <item>Sve</item>
+        <item>Benzin</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+        <item>Električni</item>
+    </string-array>
+
+    <string-array name="fuel_filter_values">
+        <item>all</item>
+        <item>gasoline</item>
+        <item>diesel</item>
+        <item>hybrid</item>
+        <item>electric</item>
+    </string-array>
+
+    <string-array name="theme_labels">
+        <item>Sistemska</item>
+        <item>Svijetla</item>
+        <item>Tamna</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+</resources>

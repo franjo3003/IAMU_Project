@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_cars"
+        android:title="@string/cars" />
+
+    <item
+        android:id="@+id/nav_add"
+        android:title="@string/add_car" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:title="@string/about" />
+
+</menu>

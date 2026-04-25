@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">CarManager</string>
+
+    <string name="cars">Automobili</string>
+    <string name="add_car">Dodaj automobil</string>
+    <string name="settings">Postavke</string>
+    <string name="about">O aplikaciji</string>
+
+    <string name="search_hint">Pretraži po marki ili modelu</string>
+    <string name="registration_valid_until">Registracija vrijedi do: %1$s</string>
+
+    <string name="brand">Marka</string>
+    <string name="model">Model</string>
+    <string name="year">Godina</string>
+    <string name="registration_number">Registracija</string>
+    <string name="mileage">Kilometraža</string>
+    <string name="fuel">Gorivo</string>
+    <string name="registration_expiry_date">Datum isteka registracije</string>
+    <string name="notes">Napomena</string>
+
+    <string name="save">Spremi</string>
+    <string name="edit">Uredi</string>
+    <string name="delete">Obriši</string>
+
+    <string name="notifications_enabled">Uključi obavijesti</string>
+    <string name="default_fuel_filter">Zadani filter goriva</string>
+    <string name="theme_mode">Tema aplikacije</string>
+
+    <string name="light_theme">Svijetla</string>
+    <string name="dark_theme">Tamna</string>
+    <string name="system_theme">Sistemska</string>
+
+    <string name="fetch_car_makes">Dohvati marke automobila s interneta</string>
+    <string name="fetching_car_makes">Dohvaćanje marki automobila...</string>
+    <string name="no_internet">Nema internetske veze</string>
+    <string name="fetch_error">Greška pri dohvaćanju podataka</string>
+
+    <string name="fill_all_fields">Popuni sva obavezna polja</string>
+    <string name="invalid_numbers">Godina i kilometraža moraju biti brojevi</string>
+
+    <string name="car_updated">Automobil je ažuriran</string>
+    <string name="car_added">Novi automobil je dodan</string>
+
+    <string name="year_format">Godina: %1$d</string>
+    <string name="fuel_format">Gorivo: %1$s</string>
+    <string name="mileage_format">Kilometraža: %1$d km</string>
+
+    <string name="car_not_found">Automobil nije pronađen</string>
+    <string name="car_deleted">Automobil obrisan</string>
+    <string name="registration_number_format">Registracija: %1$s</string>
+    <string name="registration_expiry_format">Vrijedi do: %1$s</string>
+    <string name="notes_format">Napomena: %1$s</string>
+    <string name="content_resolver_found">ContentResolver pronašao %1$d automobila</string>
+    <string name="notifications_on">Obavijesti uključene</string>
+    <string name="notifications_off">Obavijesti isključene</string>
+    <string name="all_filter">Sve</string>
+    <string name="api_result_placeholder">Rezultat će biti prikazan ovdje.</string>
+    <string name="about_text">CarManager je aplikacija za upravljanje automobilima.</string>
+    <string name="car_details">Detalji automobila</string>
+    <string name="splash_subtitle">Upravljanje automobilima</string>
+    <string name="car_card_details">%1$d • %2$s • %3$d km</string>
+
+    <string name="fuel_gasoline">Benzin</string>
+    <string name="fuel_diesel">Dizel</string>
+    <string name="fuel_hybrid">Hibrid</string>
+    <string name="fuel_electric">Električni</string>
+</resources>

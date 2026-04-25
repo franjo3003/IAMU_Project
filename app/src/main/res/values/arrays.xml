@@ -1,0 +1,52 @@
+<resources>
+
+    <string-array name="fuel_types">
+        <item>Gasoline</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+        <item>Electric</item>
+    </string-array>
+
+    <string-array name="fuel_filter_types">
+        <item>All</item>
+        <item>Gasoline</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+        <item>Electric</item>
+    </string-array>
+
+    <string-array name="theme_modes">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="fuel_filter_labels">
+        <item>All</item>
+        <item>Gasoline</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+        <item>Electric</item>
+    </string-array>
+
+    <string-array name="fuel_filter_values">
+        <item>all</item>
+        <item>gasoline</item>
+        <item>diesel</item>
+        <item>hybrid</item>
+        <item>electric</item>
+    </string-array>
+
+    <string-array name="theme_labels">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+</resources>
