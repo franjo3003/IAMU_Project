@@ -16,6 +16,7 @@ import android.os.Build
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import hr.algebra.carmanager.ui.fragment.CarDetailsFragment
+import androidx.work.ExistingWorkPolicy
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,12 +29,17 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         requestNotificationPermission()
-        startRegistrationReminderWorker()
 
         setSupportActionBar(binding.toolbar)
 
+        val openedFromNotification = intent.hasExtra("open_car_id")
+
         if (savedInstanceState == null) {
             openFragment(CarListFragment())
+
+            if (!openedFromNotification) {
+                startRegistrationReminderWorker()
+            }
         }
 
         handleNotificationIntent()
@@ -81,7 +87,11 @@ class MainActivity : AppCompatActivity() {
         val request = OneTimeWorkRequestBuilder<RegistrationReminderWorker>()
             .build()
 
-        WorkManager.getInstance(this).enqueue(request)
+        WorkManager.getInstance(this).enqueueUniqueWork(
+            "registration_reminder_worker",
+            ExistingWorkPolicy.KEEP,
+            request
+        )
     }
 
     private fun requestNotificationPermission() {

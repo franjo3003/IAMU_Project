@@ -46,7 +46,7 @@ class CarListFragment : Fragment() {
 
         setupRecyclerView()
         insertTestCarsIfNeeded()
-        loadCars()
+        refreshCars()
         testContentResolver()
         setupSearch()
         currentSearchQuery = savedInstanceState?.getString(KEY_SEARCH_QUERY).orEmpty()
@@ -148,13 +148,7 @@ class CarListFragment : Fragment() {
             ) {
                 val query = s?.toString().orEmpty()
                 currentSearchQuery = query
-                val cars = if (query.isBlank()) {
-                    carRepository.getAllCars()
-                } else {
-                    carRepository.searchCars(query)
-                }
-
-                carAdapter.submitList(cars)
+                refreshCars()
             }
 
             override fun afterTextChanged(s: Editable?) = Unit
@@ -201,10 +195,26 @@ class CarListFragment : Fragment() {
         }
     }
 
+    private fun refreshCars() {
+        val query = currentSearchQuery
+        val filter = preferenceManager.getDefaultFuelFilter()
+
+        val cars = carRepository.getAllCars()
+            .sortedWith(compareBy({ it.brand.lowercase() }, { it.model.lowercase() }))
+            .filter { fuelMatchesFilter(it.fuelType, filter) }
+            .filter {
+                query.isBlank() ||
+                        it.brand.contains(query, ignoreCase = true) ||
+                        it.model.contains(query, ignoreCase = true)
+            }
+
+        carAdapter.submitList(cars)
+    }
+
     override fun onResume() {
         super.onResume()
-        if (::carAdapter.isInitialized) {
-            loadCars()
+        if (::carAdapter.isInitialized && ::preferenceManager.isInitialized) {
+            refreshCars()
         }
     }
 

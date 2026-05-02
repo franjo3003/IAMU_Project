@@ -64,4 +64,9 @@
     <string name="fuel_diesel">Diesel</string>
     <string name="fuel_hybrid">Hybrid</string>
     <string name="fuel_electric">Electric</string>
+
+    <string name="registration_expired">Registration has expired</string>
+    <string name="registration_expiring_soon">Registration expires in %1$d day(s)</string>
+    <string name="registration_valid">Registration is valid</string>
+    <string name="registration_unknown">Registration status unknown</string>
 </resources>

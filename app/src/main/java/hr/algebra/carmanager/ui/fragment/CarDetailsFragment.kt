@@ -44,6 +44,7 @@ class CarDetailsFragment : Fragment() {
         }
 
         binding.tvDetailsTitle.text = "${car.brand} ${car.model}"
+        binding.carStatusView.setRegistrationExpiryDate(car.registrationExpiryDate)
         binding.viewPagerCarDetails.adapter = CarDetailsPagerAdapter(this, carId)
 
         binding.btnEdit.setOnClickListener {

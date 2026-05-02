@@ -13,6 +13,12 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <hr.algebra.carmanager.ui.custom.CarStatusView
+        android:id="@+id/carStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerCarDetails"
         android:layout_width="match_parent"
