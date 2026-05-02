@@ -64,4 +64,9 @@
     <string name="fuel_diesel">Dizel</string>
     <string name="fuel_hybrid">Hibrid</string>
     <string name="fuel_electric">Električni</string>
+
+    <string name="registration_expired">Registracija je istekla</string>
+    <string name="registration_expiring_soon">Registracija istječe za %1$d dana</string>
+    <string name="registration_valid">Registracija vrijedi</string>
+    <string name="registration_unknown">Status registracije nije poznat</string>
 </resources>

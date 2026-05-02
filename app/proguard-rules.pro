@@ -19,3 +19,18 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Zadrži modele (Car)
+-keep class hr.algebra.carmanager.model.** { *; }
+
+# Zadrži Fragmente
+-keep class hr.algebra.carmanager.ui.fragment.** { *; }
+
+# Zadrži ContentProvider
+-keep class hr.algebra.carmanager.data.provider.** { *; }
+
+# Zadrži Worker
+-keep class hr.algebra.carmanager.worker.** { *; }
+
+# Zadrži custom view
+-keep class hr.algebra.carmanager.ui.custom.** { *; }
