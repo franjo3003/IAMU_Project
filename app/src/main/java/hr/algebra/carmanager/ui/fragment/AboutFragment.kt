@@ -46,11 +46,12 @@ class AboutFragment : Fragment() {
 
         thread {
             try {
-                val result = CarApiClient().fetchCarFact()
+                val result = CarApiClient().fetchCarMakes()
 
                 mainHandler.post {
-                    binding.tvApiResult.text = result
+                    binding.tvApiResult.text = result.joinToString("\n")
                 }
+
             } catch (e: Exception) {
                 mainHandler.post {
                     binding.tvApiResult.text = getString(R.string.fetch_error)
